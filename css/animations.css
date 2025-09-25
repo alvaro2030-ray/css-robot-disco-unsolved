@@ -1,0 +1,119 @@
+.robot-eye-left {
+animation: left-eye 3s none infinite alternate 3s;
+}
+ @keyframes left-eye{
+ from {
+  transform: rotate(0deg);
+ }
+ to {
+  transform: rotate(90deg);
+ }
+ }
+.robot-eye-right {
+  animation: right-eye 2s none infinite alternate 4s;
+}
+@keyframes right-eye {
+  from{
+    transform: scale(.90);
+  }
+  to{
+    transform: scale(1.13);
+  }
+}
+.robot-ear-left {
+  animation: left-ear 2s none infinite alternate 2s;
+}
+@keyframes left-ear{
+  from{
+    transform: translate(0px);
+    opacity: 10;
+  }
+  to{
+    transform: translate(-100px);
+    opacity: 0;
+  }
+}
+.robot-ear-right {
+animation: right-ear 3s none infinite alternate 4s;
+}
+@keyframes right-ear{
+  0%{
+    transform: translate(0px, 0px);
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: translate(0px, 100px);
+    transform: rotate(360deg);
+  }
+  50%{
+    transform: translate(100px, 100px);
+  }
+  75%{
+    transform: translate(0px, -100px);
+    
+  }
+  100%{
+    transform: translate(0px, 0px);
+  }
+}
+.robot-nose {
+  transition: transform 2s ease-in-out 0s, border-radius 2s ease-in-out 0s;
+}
+.robot-nose:hover {
+  transform: rotate(90deg);
+  border-radius: 100%;
+}
+
+.robot-teeth {
+  animation: teeth 1s none infinite alternate 2s;
+}
+@keyframes teeth{
+  0%{background-color: rgb(38, 4, 4);}
+  25%{background-color: rgb(231, 126, 5);}
+  50%{background-color: rgb(4, 4, 245);}
+  100%{background-color: rgb(146, 48, 48);}
+}
+.robot-tooth {
+  animation: tooth 3s none infinite alternate 4s;
+}
+@keyframes tooth{
+  from{
+    transform: translate(0px);
+  }
+  to{
+    transform: translate(10px);
+  }
+}
+.robot-hair-one {
+  animation: hair1 3s none infinite alternate 4s;
+}
+@keyframes hair1 {
+  from{
+    transform: scaleY(1);
+  }
+  to{
+    transform: scaleY(-4);
+  }
+}
+.robot-hair-two {
+animation: hair2 1s none infinite alternate 4s;
+}
+@keyframes hair2 {
+  from{ 
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(-100px);
+  }
+}
+.robot-hair-three {
+  animation: hair3 1s none infinite alternate 4s;
+}
+@keyframes hair3 {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(4);
+  }
+}
